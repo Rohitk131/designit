@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="mb-8 border-b border-amber-800/20 pb-6">
           <div className="font-serif text-amber-900">
-            <p className="text-lg mb-2 font-bold italic">THE DAILY CHRONICLE</p>
+            <p className="text-lg mb-2 font-bold italic">Rohit Bhadwe</p>
             <p className="mb-1 text-sm">Est. {new Date().getFullYear()}</p>
             <p className="mb-1 text-sm">Vol. XXVII • No. 1.0.0</p>
             <p className="mb-1 text-sm">Days in Print: {Math.floor(Math.random() * 999)}</p>
