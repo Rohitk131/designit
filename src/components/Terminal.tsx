@@ -10,8 +10,9 @@ const Terminal: React.FC<TerminalProps> = ({ className }) => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState<string[]>([
     'C:\\> SYSTEM INITIALIZING...',
-    'C:\\> CONNECTING TO MAINFRAME...',
+    'C:\\> CONNECTING TO DaVinci Resolve...',
     'C:\\> ACCESS GRANTED',
+    'C:\\> TEAM MEMBERS: ROHIT - ARYAN - MURTAZA',
     'C:\\> TYPE HELP FOR AVAILABLE COMMANDS'
   ]);
   const [isInputFocused, setIsInputFocused] = useState(false);

@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const [index, setIndex] = useState(0);
   const [blinkCursor, setBlinkCursor] = useState(true);
   
-  const fullText = "WELCOME TO CYBER-HQ";
+  const fullText = "WELCOME TO DaVinci Resolve";
   
   useEffect(() => {
     if (index < fullText.length) {

@@ -30,8 +30,8 @@ const Navbar: React.FC = () => {
   return (
     <header 
       className={cn(
-        'fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-old-paper backdrop-blur-md',
-        scrolled ? 'py-2 border-b border-sepia/30' : 'py-4'
+        'fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-old-paper backdrop-blur-sm w-2/3 rounded-2xl mx-auto ',
+        scrolled ? 'py-2 border-b border-sepia/30 ' : 'py-4 bg-old-paper/10 border '
       )}
     >
       <div className="container mx-auto flex justify-between items-center px-4">
@@ -40,9 +40,7 @@ const Navbar: React.FC = () => {
           className="flex items-center space-x-2"
           aria-label="Cyber HQ Logo"
         >
-          <div className="h-8 w-8 border-2 border-sepia neon-border bg-old-paper pixel-corners flex items-center justify-center">
-            <div className="text-sepia animate-pulse text-lg font-bold old-movie-text">CX</div>
-          </div>
+          <img src='/image.png' className='w-7 h-7'/>
           <span className={`text-xl font-bold old-movie-text text-sepia ${generateFlickerAnimation()}`}>
             DaVinci Resolve
           </span>
