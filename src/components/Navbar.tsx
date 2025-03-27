@@ -48,7 +48,6 @@ const Navbar: React.FC = () => {
           </span>
         </a>
         
-        {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-6">
           {menuItems.map((item, index) => (
             <a
@@ -61,7 +60,6 @@ const Navbar: React.FC = () => {
           ))}
         </nav>
         
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-800 p-2 focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -74,7 +72,6 @@ const Navbar: React.FC = () => {
         </button>
       </div>
       
-      {/* Mobile Menu */}
       <div 
         className={cn(
           'md:hidden fixed inset-0 bg-old-paper/90 z-50 backdrop-blur-sm transition-transform duration-300 pt-20',
