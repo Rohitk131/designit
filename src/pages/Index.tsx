@@ -8,7 +8,6 @@ import ScanLines from '@/components/ScanLines';
 import RetroButton from '@/components/RetroButton';
 
 const Index = () => {
-  // Konami code easter egg
   useEffect(() => {
     const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     let konamiIndex = 0;
@@ -30,11 +29,9 @@ const Index = () => {
     };
     
     const activateEasterEgg = () => {
-      // Play 8-bit sound
       const audio = new Audio('data:audio/wav;base64,UklGRl9HAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YTtHAACA/wAAf/8AAH//AAB//wAAf/8AAH//AAB//wAAf/8AAH7/AAB+/wAAfv8AAH7/AQB9/wIAff8DAHz/AwB8/wQAe/8FAHr/BQB6/wYAef8GAHn/BwB4/wgAeP8IAHf/CQB2/wkAdv8KAHb/CgB1/wsAdP8MAHb/CgB2/woAdv8LAHb/CwB2/wsAdv8LAHb/CwB2/wsAdv8LAHb/CwB2/wsAdv8LAHb/CwB2/wsAdv8LAHb/CwB2/wsAdv8LAHb/CwB2/woAdv8KAHb/CgB2/woAdv8KAHb/CgB2/woAdv8KAHb/CgB2/wkAdv8JAHf/CAB3/wgAd/8IAHj/BwB4/wcAeP8HAHj/BwB4/wcAef8GAHn/BgB6/wUAev8FAHr/BQB6/wUAe/8EAHv/BAB8/wMAff8CAIA/');
       audio.play();
       
-      // Add some visual effect (e.g., flash the screen)
       const flashElement = document.createElement('div');
       flashElement.style.position = 'fixed';
       flashElement.style.top = '0';
@@ -48,7 +45,6 @@ const Index = () => {
       
       document.body.appendChild(flashElement);
       
-      // Fade out and remove
       setTimeout(() => {
         flashElement.style.transition = 'opacity 0.5s';
         flashElement.style.opacity = '0';
@@ -73,7 +69,6 @@ const Index = () => {
       <Hero />
       <Features />
       
-      {/* CTA Section */}
       <section className="relative py-24 bg-cyber-purple/10 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="retro-grid h-full"></div>
